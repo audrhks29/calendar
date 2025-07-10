@@ -2,13 +2,11 @@ import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function TabTwoScreen() {
+export default function MonthText() {
   return (
     <SafeAreaView>
       <ThemedView>
-        <ThemedText>
-          This app includes example code to help you get started.
-        </ThemedText>
+        <ThemedText>ddd</ThemedText>
       </ThemedView>
     </SafeAreaView>
   );

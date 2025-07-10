@@ -1,3 +1,4 @@
+import { useColorScheme } from "@/hooks/useColorScheme";
 import {
   DarkTheme,
   DefaultTheme,
@@ -8,12 +9,11 @@ import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 import "../global.css";
-import { useColorScheme } from "@/hooks/useColorScheme";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    YeonSung: require("../assets/fonts/YeonSung-Regular.ttf"),
   });
 
   if (!loaded) {
@@ -27,6 +27,7 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
+
       <StatusBar style="auto" />
     </ThemeProvider>
   );
